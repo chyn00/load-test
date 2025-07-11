@@ -27,7 +27,7 @@ source .venv/bin/activate
 locust -f load_test.py  # (-f: 실행할 테스트 스크립트 파일 지정)
 ```
 
-## HeadLess 실행
+## HeadLess 실행(1,000tps 20초 가정)
 아래 명령어로 해야 정확한 request가 console에 출력된다.
 ```bash
 locust -f load_test.py --headless -u 1000 -r 1000 --run-time 20s --host=http://localhost:9999
