@@ -16,4 +16,4 @@ class OrderLoadTest(FastHttpUser):
 
     self.client.post("/order/stock/limit", json=payload)
 
-#locust -f load_test.py --headless -u 1000 -r 1000 --run-time 20s --host=http://localhost:9999
+#locust -f SingleInstanceLoadTest.py --headless -u 1000 -r 1000 --run-time 20s --host=http://localhost:9999
